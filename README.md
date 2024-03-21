@@ -21,7 +21,7 @@ This is the repository for my personal portfolio website. The website showcases 
 
 ## Usage
 
-To view the website, simply visit [myportfolio.com](https://www.myportfolio.com).
+To view the website, simply visit [Lakshya.io]([https://www.myportfolio.com](https://lakshya-khare.github.io/Portfolio-site/)).
 
 ## NOTE
 
