@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Lakshya.io</title>
+
+    <!-- Link -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/favicon/android-chrome-512x512.png"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/utilities.css"/>
+
+  </head>
+
+  <body>
+
+
+
+    <div class="overlay" id="overlay">
+      <div class="popup">
+        <h3>THIS WEBSITE IS CURRENTLY OPTIMIZED FOR LAPTOP AND PC BETTER THEN PHONE
+         <BR> TO GET THE BETTER EXPERIENCE OPEN IN LAPTOP OR PC !
+        <span class="close-btn" onclick="closePopup()">&#x2715;</span></h3>
+      </div>
+    </div>
+    
+    <script>
+      // Function to display the popup
+      function displayPopup() {
+        document.getElementById('overlay').style.display = 'block';
+      }
+    
+      // Function to close the popup
+      function closePopup() {
+        document.getElementById('overlay').style.display = 'none';
+      }
+    
+      // Check if the device is a mobile device
+      function isMobileDevice() {
+        return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+      }
+    
+      // Show the popup only on mobile devices
+      window.onload = function() {
+        if (isMobileDevice()) {
+          displayPopup();
+        }
+      };
+    </script>
+
+
+
+
+   <!--Header--> 
+    <header id="hero">
+
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container">
+
+          <!-- Logo -->
+          <h1 id="logo">
+            <a href="#top">
+              < Lakshya Khare /></a>
+          </h1>
+
+          <!-- Navbar links -->
+          <ul class="nav-menu">
+            <li><a class="nav-link" href="#about">< ABOUT /></a></li>
+            <li><a class="nav-link" href="#projects">< PROJECTS/></a></li>
+            <li><a class="nav-link" href="#contact">< CONTACT/></a></li>
+            <li><a class="nav-link" href="#blog">< BlOG/></a></li>
+            <li>
+              <a
+                class="nav-link btn btn-primary"
+                href="https://drive.google.com/file/d/1lWnmgLEvpO23mp2FW6G-y_XJdWMiCU-n/view?usp=sharing">RESUME <i class="fas fa-arrow-right"></i
+              ></a>
+            </li>
+
+            <!-- Toggle switch -->
+            <div class="theme-switch">
+              <input type="checkbox" id="switch" />
+              <label class="toggle-icons" for="switch">
+                <img class="moon" src="assets/moon.svg" />
+                <img class="sun" src="assets/sun.svg" />
+              </label>
+            </div>
+
+            <!-- Hamburger menu -->
+          </ul>
+            <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+
+      <!--1st page with logo-->
+      <section class="header-container">
+        <img
+          class="profile-image"
+          src="assets/profile.png"
+          alt=""
+        />
+        <div class="content-text">
+          <h1>नमस्ते 🙏! I'm Lakshya</h1>
+          <h2>A Passionate Digital Craftsman From India!</h2>
+
+          <p>
+            And Computer Science & Engineering student at LNCT Group of Colleges.
+          </p>
+        </div>
+        <a href="#contact" class="btn btn-secondary">Connect With Me</a>
+      </section>
+    </header>
+
+    <!--About-->
+    <div id="about" class="project-container container">
+      <div class="division"></div>
+    <div class="about-container">
+      <div class="about-card">
+        <section class="about-content">
+          <h2>< About /></h2>
+          
+          <!-- About template -->
+          <h4>I am a candidate for BTech in Computer Science Engineering at LNCT Group of Colleges.</h4>
+          <h4>I am also a freetime developer craftsman.</h4>
+          <h4>I love a, b, and c things of codes.</h4>
+        </section>
+
+        <section class="about-content tech-stack-section">
+            <h2>< My Current Tech Stack /></h2>
+
+          <div align="center">
+            <img align="left" width=300 height=300 alt="side_sticker"
+            src="https://i.giphy.com/5eLDrEaRGHegx2FeF2.webp" /> 
+            
+            <br><br>
+
+           <p align="">
+              <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="55" height="50"/></a> 
+              <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="55" height="50"/></a> 
+              <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="55" height="50"/></a> 
+              <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="55" height="50"/></a> 
+              <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="55" height="50"/></a> 
+              <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="55" height="50"/></a> 
+              <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="55" height="50"/></a> 
+              <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="55" height="50"/></a>
+              <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="55" height="50"/></a>
+              <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="55" height="50"/></a> 
+              <a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="55" height="50"/></a> 
+              <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="55" height="50"/></a> 
+              <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="55" height="50"/></a> 
+              <a href="https://cloud.google.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="55" height="50"/></a> 
+              <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="55" height="50"/></a> 
+              <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="55" height="50"/></a> 
+              <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="55" height="50"/></a> 
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="55" height="50"/></a>
+              <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="55" height="50"/></a> 
+              <a href="https://mariadb.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg" alt="mariadb" width="55" height="50"/></a> 
+              <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="55" height="50"/></a> 
+              <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="55" height="50"/></a> 
+              <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="55" height="50"/></a> 
+              <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="55" height="50"/></a> 
+              <a href="https://www.oracle.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="55" height="50"/></a> 
+              <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="55" height="50"/></a> 
+              <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="55" height="50"/></a> 
+              <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="55" height="50"/></a> 
+              <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="55" height="50"/></a>
+              <a href="https://developer.apple.com/swift/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg" alt="swift" width="55" height="50"/></a>
+            </p>  
+          </div>
+
+        </section>
+
+        
+        <section class="about-content">
+          <h2>< Experience /></h2>
+  
+          <h4>><u> Chitransh Traders & Co · Part-time · [Sep 2023 - Jun 2027]:</u><br> - As Owner's Representative</h4>
+          <h6>&#183;  Partly Worked At My Family Business Chitransh Traders & Co And Working With Marketing And Managing Team In There ,
+             With Ground Level Knowledge Of Small Businesses and It's Supply Chain Network!</h6>
+  
+          </section>
+
+
+        <section class="about-content">
+        
+          <h2>< Education /></h2>
+
+          <h4>><u> LNCT Group of Colleges · [Sep 2023 - Jun 2027]:</u><br> - Bachelor of Technology In Computer Science</h4>
+          <h6>&#183; First-year Computer Science & Engineering student at LNCT Group of Colleges.</h6>
+
+          <h4>><u> Neev Academy · [Apr 2017 - Mar 2023]: </u><br> - Secondary Education</h4>
+          <h6>&#183; Was awarded with gold medals for being school topper in Science Olympiads and Computer Olympiads with rank 1st in both!<br>
+          &#183; Was part of various science projects and other events that were organised!</h6>
+
+          <h4>><u> Christian English College · [Apr 2007 - Mar 2017]:</u><br> - Elementary education</h4>
+          <h6>&#183; Winner of Genral Knowledge quiz with rank 1st.<br>
+          &#183; Ranked 3 in the city for painting competition organised by UCMAS ABACUS.<br>
+          &#183; Was part of various science projects and co-curricular events held !</h6>
+
+        </section>
+
+
+
+      </div>
+    </div>
+    </div>
+
+    <!-- #Projects -->
+    <section id="projects" class="project-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>< Projects & Innovation /></h2>
+        <p>Check Out Some Of My Personal And Team Projects</p>
+      </div>
+
+      <article class="project">
+        <!-- Project 1 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>GITHUB README FILE</h3>
+              <p>Description</p>
+            </div>
+
+            <div class="project-link">
+              <a href="https://github.com/lakshya-khare/lakshya-khare" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://github.com/lakshya-khare/lakshya-khare" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Project Two</h3>
+              <p>Description</p>
+            </div>
+
+            <div class="project-link">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Porject 3 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Project Three</h3>
+              <p>Description</p>
+            </div>
+
+            <div class="project-link">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Project Four</h3>
+              <p>Description</p>
+            </div>
+
+            <div class="project-link">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Project Five</h3>
+              <p>Description</p>
+            </div>
+
+            <div class="project-link">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Project Six</h3>
+              <p>Description</p>
+            </div>
+
+            <div class="project-link">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- SEE MORE PROJECTS -->
+      <a href="https://github.com/lakshya-khare?tab=repositories" class="btn btn-secondary" target="_blank"> See More <i class="fas fa-arrow-right"></i></a>
+
+    </section>
+
+    <!-- #contact-->
+    <section id="contact" class="project-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>< Contact /></h2>
+        <p>Wanna Get In Touch Send A Message On</p>
+      </div>
+      <p align="center">
+        <a href="https://twitter.com/lakshya_khare" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="lakshya_khare" height="30" width="40" /></a>
+        <a href="https://linkedin.com/in/lakshyakhare" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="lakshyakhare" height="30" width="40" /></a>
+        <a href="https://instagram.com/lakshya_khare" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="lakshya_khare" height="30" width="40" /></a>
+        </p>
+        <br>
+        <br>
+        <h4 align="center">OR JUST EMAIL ON:</h4>
+      <div align="center">
+        <br>
+        <h3>< LAKSHYAKHARE226@GMAIL.COM /></h3>
+        <br>
+        <a href="mailto:lakshyakhare226@gmail.com" class="btn btn-tertiary" target="_blank"> Mail Me <i class="fas fa-arrow-right"></i></a>
+        </div>
+    
+    </section>
+
+    <!--#blog-->
+    <section id="blog" class="project-container container">
+          <div class="division"></div>
+          <div class="content-text">
+            <h2>< BLOG  /></h2>
+            <p>Check Out Some Of My Latest Things</p>
+          </div>
+
+
+          
+          <p align="center">
+          <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+          <div class="elfsight-app-f9955171-fad7-4114-a8f6-2506a2d5a7ee" data-elfsight-app-lazy></div>
+          
+          
+          
+          </p>
+          <div align="center">
+          <a href="https://www.linkedin.com/in/lakshyakhare/recent-activity/all/" class="btn btn-tertiary" target="_blank"> See More <i class="fas fa-arrow-right"></i></a>
+          </div>
+    
+    
+    </section>
+
+    <!-- Footer-->
+    <footer id="footer">
+      <div class="division"></div>
+      <div class="container">
+
+        <!-- Social links -->
+        <div class="social">
+          <a href="https://m.facebook.com/profile.php?id=100009572686572" target="_blank"><img src="./assets/facebook-icon.svg" alt="Facebook"/></a>
+          <a href="https://twitter.com/lakshya_khare" target="_blank"><img src="./assets/twitter-icon.svg" alt="Twitter" /></a>
+          <a href="https://www.linkedin.com/in/lakshyakhare" target="_blank"><img src="./assets/linkedin-icon.svg" alt="Linkedin"/></a>
+          <a href="https://github.com/lakshya-khare" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+          <a href="https://www.instagram.com/lakshya_khare" target="_blank"><img src="./assets/hashnode-icon.svg" alt="Instagram"/></a>
+        </div>
+
+
+
+        <!-- Attribution -->
+        <div class="attribution">
+          <a
+            href="https://github.com/lakshya-khare"
+            target="_blank"
+            rel="noopener noreferrer">
+            <h2>Lakshya.io/dev</h2>
+          </a>
+        </div>
+        <br>
+        <p>Copyright &copy; lakshya_khare <span id="datee"></span>, All rights are not yet reserved ( dont know how to do it T_T )</p>
+
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
