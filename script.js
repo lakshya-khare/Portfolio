@@ -1,20 +1,20 @@
-/* ═══════════════════════════════════════════
-   Portfolio – Interactions
-   ═══════════════════════════════════════════ */
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   Portfolio â€“ Interactions
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 ;(function () {
   'use strict';
 
-  /* ── DOM cache ──────────────────────────── */
+  /*  DOM cache â”€ */
   const nav       = document.querySelector('.nav');
   const toggle    = document.querySelector('.nav__toggle');
   const menu      = document.querySelector('.nav__menu');
   const navLinks  = document.querySelectorAll('.nav__link, .nav__resume');
   const yearEl    = document.getElementById('year');
 
-  /* ── Copyright year ─────────────────────── */
+  /*  Copyright year  */
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  /* ── Dark mode ───────────────────────────── */
+  /*  Dark mode  */
   var themeToggle = document.getElementById('themeToggle');
   var themeIcon   = document.getElementById('themeIcon');
   var htmlEl      = document.documentElement;
@@ -48,7 +48,7 @@
     setTimeout(function () { themeIcon.style.transform = ''; }, 500);
   });
 
-  /* ── Mobile menu ────────────────────────── */
+  /*  Mobile menu  */
   function closeMenu () {
     toggle.classList.remove('active');
     menu.classList.remove('open');
@@ -65,7 +65,7 @@
     link.addEventListener('click', closeMenu);
   });
 
-  /* ── Nav shadow on scroll ───────────────── */
+  /*  Nav shadow on scroll  */
   function handleScroll () {
     if (window.scrollY > 10) {
       nav.classList.add('nav--scrolled');
@@ -76,7 +76,7 @@
   window.addEventListener('scroll', handleScroll, { passive: true });
   handleScroll();
 
-  /* ── Lenis smooth scroll ─────────────── */
+  /*  Lenis smooth scroll  */
   var lenis = null;
   if (typeof Lenis !== 'undefined') {
     lenis = new Lenis({
@@ -93,7 +93,7 @@
     requestAnimationFrame(lenisRaf);
   }
 
-  /* ── Scroll progress bar ────────────── */
+  /*  Scroll progress bar  */
   var progressBar = document.getElementById('scroll-progress');
   function updateProgress () {
     var scrolled = window.scrollY;
@@ -107,7 +107,7 @@
     window.addEventListener('scroll', updateProgress, { passive: true });
   }
 
-  /* ── Active nav link on scroll ───────── */
+  /*  Active nav link on scroll  */
   var sections    = document.querySelectorAll('section[id], header[id]');
   var sectionLinks = document.querySelectorAll('.nav__link[href^="#"]');
   function updateActiveNav () {
@@ -123,7 +123,7 @@
   window.addEventListener('scroll', updateActiveNav, { passive: true });
   updateActiveNav();
 
-  /* ── Anchor click scroll ────────────── */
+  /*  Anchor click scroll  */
   var navHeight = nav.offsetHeight || 56;
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
@@ -138,7 +138,7 @@
     });
   });
 
-  /* ── Hero entrance animation ─────────────── */
+  /*  Hero entrance animation  */
   var hero = document.querySelector('.hero');
   if (hero) {
     requestAnimationFrame(function () {
@@ -148,7 +148,7 @@
     });
   }
 
-  /* ── Rotating typewriter on hero tagline ── */
+  /*  Rotating typewriter on hero tagline  */
   var rotateEl = document.querySelector('.hero__rotate[data-words]');
   if (rotateEl) {
     var words = JSON.parse(rotateEl.getAttribute('data-words'));
@@ -197,7 +197,7 @@
     setTimeout(tick, startDelay);
   }
 
-  /* ── Ripple on buttons ───────────────────── */
+  /*  Ripple on buttons  */
   document.querySelectorAll('.btn').forEach(function (btn) {
     btn.addEventListener('click', function (e) {
       var r = btn.getBoundingClientRect();
@@ -215,7 +215,7 @@
     });
   });
 
-  /* ── 3-D tilt on glass cards ─────────────── */
+  /*  3-D tilt on glass cards  */
   document.querySelectorAll('.skill-group, .project-card, .timeline__card').forEach(function (card) {
     card.addEventListener('mousemove', function (e) {
       var r = card.getBoundingClientRect();
@@ -233,7 +233,7 @@
     });
   });
 
-  /* ── Staggered social icons pop on reveal ─ */
+  /*  Staggered social icons pop on reveal â”€ */
   var socialIcons = document.querySelectorAll('.contact__social a');
   if ('IntersectionObserver' in window && socialIcons.length) {
     var socialObs = new IntersectionObserver(function (entries) {
