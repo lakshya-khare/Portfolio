@@ -1,10 +1,10 @@
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-   Portfolio â€“ Interactions
-   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+/* ═══════════════════════════════════════════
+   Portfolio – Interactions
+   ═══════════════════════════════════════════ */
 ;(function () {
   'use strict';
 
-  /*  DOM cache â”€ */
+  /*  DOM cache ─ */
   const nav       = document.querySelector('.nav');
   const toggle    = document.querySelector('.nav__toggle');
   const menu      = document.querySelector('.nav__menu');
@@ -233,7 +233,7 @@
     });
   });
 
-  /*  Staggered social icons pop on reveal â”€ */
+  /*  Staggered social icons pop on reveal ─ */
   var socialIcons = document.querySelectorAll('.contact__social a');
   if ('IntersectionObserver' in window && socialIcons.length) {
     var socialObs = new IntersectionObserver(function (entries) {
